@@ -4,7 +4,11 @@ Exploring the possibilities. The horizon in the distance. As the leaves fall to 
 
 ...
 
-Learned how to use Vue and React components inside Astro components.
+And as the sun emerges from its slumber, life awakens.
+
+A new day and a new beginning.
+
+...
 
 ## Astro Starter Kit: Basics
 
