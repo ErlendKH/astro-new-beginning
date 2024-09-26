@@ -1,12 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import InlineNavigation from '../components/inlineNavigation.vue';
 ---
 
 <Layout title="Astro New Beginning">
 	<main>
 
 		<h1>A<span style="color:aqua">stro</span> New Beginning</h1>
+
+		<div style="display:flex; flex-direction: column; align-items: center; justify-items: center; padding: 2rem;">
+			<InlineNavigation />	
+		</div>
 
 		<p style="text-align: center;">No instructions yet...</p>
 
