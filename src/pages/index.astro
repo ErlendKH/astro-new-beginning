@@ -3,12 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Astro New Beginning">
 	<main>
 
 		<h1>A<span style="color:aqua">stro</span> New Beginning</h1>
 
 		<p style="text-align: center;">No instructions yet...</p>
+
+		<p style="text-align: center;">Let's make some <span class="make-content">content</span>.</p>
 
 		<!-- 
 		<svg
@@ -127,5 +129,21 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+	}
+
+	/*  */
+
+	.make-content {
+		color:greenyellow; 
+		cursor:pointer;
+		transition-duration: 1000ms;
+	}
+	.make-content:hover {
+		color:chartreuse;
+		color:aqua;
+		color:darksalmon;
+		color:hotpink;
+		color:pink;
+		transition-duration: 1000ms;
 	}
 </style>
