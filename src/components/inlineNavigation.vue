@@ -1,19 +1,21 @@
 <script setup lang="ts">
 
 const props = defineProps<{
-    pages?: any[]
+    pages: any[]
+    // pages: {
+    //     route: string,
+    //     title: string,
+    // }[]
 }>();
+
+console.log(props?.pages)
 
 </script>
 
 <template>
     <div style="display: flex; flex-direction: column; font-style:italic;">
-        <template v-for="page in pages">
-            <a href={{ page.href }}>{{ page.title }}</a>
+        <template v-for="page in props.pages">
+            <a :href=page.route >{{ page.title }}</a>
         </template>
-        <!-- 
-        <a href="/">Home, sweet home</a>
-        <a href="/about/">About</a>
-         -->
     </div>
 </template>

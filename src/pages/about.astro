@@ -1,12 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import InlineNavMaster from '../components/InlineNavMaster.astro';
+import { InlineNavigationTSX } from '../components/inlineNavigation';
+
+const navigationList = [
+	{
+		route: "/",
+		title: "Home, sweet home",
+	},
+	{
+		route: "/about/",
+		title: "About",
+	}
+]
+
 ---
 
 <Layout title="Astro New Beginning | About">
 	<main>
 
 		<h1>About</h1>
+
+		<InlineNavMaster>
+			<InlineNavigationTSX navigationList={ navigationList } client:visible />
+		</InlineNavMaster>
 
 		<p style="text-align: center;">No content yet...</p>
 
