@@ -1,4 +1,12 @@
-# Astro Starter Kit: Basics
+# Astro New Beginning
+
+Exploring the possibilities. The horizon in the distance. As the leaves fall to the ground. As day turns to night.
+
+...
+
+Learned how to use Vue and React components inside Astro components.
+
+## Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
