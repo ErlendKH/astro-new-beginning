@@ -4,9 +4,9 @@ Exploring the possibilities. The horizon in the distance. As the leaves fall to 
 
 ...
 
-And as the sun emerges from its slumber, life awakens.
+**And as the sun emerges from its slumber**, life awakens.
 
-A new day and a new beginning.
+A new day and ***a new beginning***.
 
 ...
 
