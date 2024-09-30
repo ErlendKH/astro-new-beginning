@@ -8,7 +8,7 @@ import { WeatherMaker } from "../components/weatherMaker";
 
 <Layout title="Astro New Beginning">
   <main>
-    <h1>A<span style="color:aqua">stro</span> New Beginning</h1>
+    <h1>A<span class="astroTitle">stro</span> New Beginning</h1>
 
     <!-- 		<div style="display:flex; flex-direction: column; align-items: center; justify-items: center; padding: 2rem; padding-top: 0.5rem;">
 			<InlineNavigation pages={ navigationList } client:visible />	
@@ -117,6 +117,14 @@ import { WeatherMaker } from "../components/weatherMaker";
   }
 
   /*  */
+
+  .astroTitle {
+	color: aqua;
+	transition: 2s;
+  }
+  .astroTitle:hover {
+	color:mediumspringgreen;
+  }
 
   .make-content {
     color: greenyellow;
