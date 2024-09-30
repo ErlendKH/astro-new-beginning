@@ -26,21 +26,51 @@ import { WeatherMaker } from "../components/weatherMaker";
 
     <div style="display:flex; justify-content:center;">
       <button class="rainy-button rainy1">Make it rain please</button>
-	  <button class="rainy-button rainy2">Make it rain?</button>
-	  <button class="rainy-button rainy3">Or not</button>
-	  <button class="rainy-button rainy4">Come on</button>
-	  <button class="rainy-button rainy5">You can do it</button>
+      <button class="rainy-button rainy2">Make it rain?</button>
+      <button class="rainy-button rainy3">Or not</button>
+      <button class="rainy-button rainy4">Come on</button>
+      <button class="rainy-button rainy5">You can do it</button>
+      <button class="rainy-button rainy6">Bye</button>
+    </div>
+
+    <div style="text-align:center; margin-top: 5rem; margin-bottom: 1rem;">
+      Some shiny gems are blocking your path
     </div>
 
     <div style="display:flex; justify-content:center;">
-		<button class="button-all bubbly">Bubbly</button>
-		<button class="button-all bubbly">Bubbly</button>
-		<button class="button-all bubbly">Bubbly</button>
-	</div>
+      <button class="button-all bubbly bubble1"></button>
+      <button class="button-all bubbly bubble2"></button>
+      <button class="button-all bubbly bubble3"></button>
+    </div>
 
-    <div style="display:flex; justify-content:center;">
+    <div style="text-align:center; margin-top: 5rem; margin-bottom: 1rem;">Reveal the secret word</div>
+
+    <div
+      class="gems"
+      style="position:relative; display:flex; flex-direction: column; align-items: center; justify-items: center; justify-content:center; margin-bottom: 4rem;"
+    >
+      <!-- <div class="treasure">Potato</div> -->
+      <div class="gem-row">
+        <button class="button-all gem"></button>
+        <button class="button-all gem"></button>
+        <button class="button-all gem"></button>
+      </div>
+      <div class="gem-row">
+        <button class="button-all gem"></button>
+        <button class="button-all gemAnswer"></button>
+        <div class="treasure">Potato</div>
+        <button class="button-all gem"></button>
+      </div>
+      <div class="gem-row">
+        <button class="button-all gem"></button>
+        <button class="button-all gem"></button>
+        <button class="button-all gem"></button>
+      </div>
+    </div>
+
+    <!--     <div style="display:flex; justify-content:center;">
 		<button class="button-all shy">Shy</button>
-	</div>
+	</div> -->
 
     <!-- <WeatherMaker /> -->
 
@@ -123,11 +153,11 @@ import { WeatherMaker } from "../components/weatherMaker";
   /*  */
 
   .astroTitle {
-	color: aqua;
-	transition: 2s;
+    color: aqua;
+    transition: 2s;
   }
   .astroTitle:hover {
-	color:mediumspringgreen;
+    color: mediumspringgreen;
   }
 
   .make-content {
@@ -152,69 +182,186 @@ import { WeatherMaker } from "../components/weatherMaker";
     font-size: large;
     border-color: white;
     border-radius: 0.5rem;
-	cursor:pointer;
-	transition: 1s;
+    cursor: pointer;
+    transition: 1s;
   }
 
   .rainy-button {
     /* background-color: rgb(0, 0, 0); */
-	background: linear-gradient(to bottom right, rgb(40, 223, 255), rgb(255, 64, 166));
+    background: linear-gradient(
+      to bottom right,
+      rgb(40, 223, 255),
+      rgb(255, 64, 166)
+    );
     color: white;
     padding: 1rem;
     margin: 1rem;
     font-size: large;
-	border-width: 0rem;
+    border-width: 0rem;
     /* border: linear-gradient(to left, rgb(18, 126, 49), rgb(211, 42, 132)); */
     border-radius: 0.5rem;
-	cursor:pointer;
-	transition: 2s;
+    cursor: pointer;
+    transition: 2s;
   }
   .rainy1:hover {
-	filter:contrast(500%) brightness(50%)
-	/* color: aqua; */
-	/* border-color: aqua; */
-	/* background-color:dodgerblue; */
-	/* transition: 1s */
+    filter: contrast(500%) brightness(50%);
+    /* color: aqua; */
+    /* border-color: aqua; */
+    /* background-color:dodgerblue; */
+    /* transition: 1s */
   }
   .rainy2 {
-	background: linear-gradient(to bottom right, rgb(0, 255, 72), rgb(210, 32, 255));
+    background: linear-gradient(
+      to bottom right,
+      rgb(0, 255, 72),
+      rgb(210, 32, 255)
+    );
   }
-  .rainy2:hover{
-	filter:hue-rotate(180deg)
+  .rainy2:hover {
+    filter: hue-rotate(180deg);
   }
   .rainy3 {
-	background: linear-gradient(to bottom right, rgb(226, 255, 40), rgb(255, 91, 179));
+    background: linear-gradient(
+      to bottom right,
+      rgb(226, 255, 40),
+      rgb(255, 91, 179)
+    );
   }
-  .rainy3:hover{
-	filter:grayscale(80%)
+  .rainy3:hover {
+    filter: grayscale(80%);
   }
   .rainy4 {
-	background: linear-gradient(to bottom right, rgb(255, 161, 247), rgb(154, 0, 193));
+    background: linear-gradient(
+      to bottom right,
+      rgb(255, 161, 247),
+      rgb(154, 0, 193)
+    );
   }
-  .rainy4:hover{
-	filter:hue-rotate(90deg)
+  .rainy4:hover {
+    filter: hue-rotate(90deg);
   }
   .rainy5 {
-	background: linear-gradient(to bottom right, rgb(255, 67, 67), rgb(255, 137, 200));
+    background: linear-gradient(
+      to bottom right,
+      rgb(255, 67, 67),
+      rgb(255, 137, 200)
+    );
   }
-  .rainy5:hover{
-	filter:invert(75%)
+  .rainy5:hover {
+    filter: invert(75%);
+  }
+  .rainy6 {
+    background: linear-gradient(
+      to bottom right,
+      rgb(10, 141, 255),
+      rgb(255, 55, 55)
+    );
+  }
+  .rainy6:hover {
+    opacity: 0;
   }
 
   .bubbly {
-
+    border: none;
+    padding: 2rem;
+    background: linear-gradient(
+      to bottom left,
+      rgb(255, 255, 255),
+      rgb(213, 255, 1)
+    );
   }
   .bubbly:hover {
-/* 	margin-left: 12rem;
+    /* 	margin-left: 12rem;
 	transition: 1s */
   }
   .bubbly:active {
-	margin-right: 12rem;
-	/* transition: 1s */
+    margin-right: 12rem;
+    opacity: 0.75;
+    /* transition: 1s */
   }
 
-  .shy:hover {
-	opacity: 0
+  .bubbly:nth-child(1) {
+    background: linear-gradient(
+      to bottom left,
+      rgb(255, 255, 255),
+      rgb(1, 255, 56)
+    );
+  }
+  .bubbly:nth-child(2) {
+    background: linear-gradient(
+      to bottom left,
+      rgb(255, 255, 255),
+      rgb(255, 149, 1)
+    );
+  }
+  .bubbly:nth-child(3) {
+    background: linear-gradient(
+      to bottom left,
+      rgb(255, 255, 255),
+      rgb(213, 255, 1)
+    );
   }
 
+  .treasure {
+    text-align:center;
+    left: 46.3%; right: 50%; bottom: 50%; top: 45%;
+    position: absolute;
+    opacity: 0;
+    pointer-events:none;
+    color:gray;
+    filter: blur(4px);
+    transition: 0.5s;
+  }
+
+  .gem {
+    border: none;
+    padding: 2rem;
+    background: linear-gradient(
+      to bottom left,
+      rgb(255, 255, 255),
+      rgb(1, 208, 255)
+    );
+  }
+  .gem:active {
+    margin-right: 12rem;
+  }
+
+  .gems {
+
+  }
+  .gems.gem-row:nth-of-type(2).gem:nth-child(2) {
+    background: linear-gradient(
+      to bottom left,
+      rgb(255, 255, 255),
+      rgb(144, 255, 174)
+    );
+  }
+
+  .gemAnswer {
+    border: none;
+    padding: 2rem;
+    background: linear-gradient(
+      to bottom left,
+      rgb(255, 255, 255),
+      rgb(1, 208, 255)
+    );    
+  }
+  .gemAnswer:active {
+    opacity: 0;
+  }
+  .gemAnswer:active ~ .treasure {
+    opacity: 1;
+    transition: 2;
+    filter: blur(0px);
+}​
+
+  /*   .bubble1 {
+    background: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(255, 149, 1));
+  }
+  .bubble2 {
+    background: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(255, 149, 1));
+  }
+  .bubble3 {
+    background: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(255, 149, 1));
+  } */
 </style>
