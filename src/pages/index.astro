@@ -25,7 +25,11 @@ import { WeatherMaker } from "../components/weatherMaker";
     </p>
 
     <div style="display:flex; justify-content:center;">
-      <button class="rainy-button">Make it rain please</button>
+      <button class="rainy-button rainy1">Make it rain please</button>
+	  <button class="rainy-button rainy2">Make it rain?</button>
+	  <button class="rainy-button rainy3">Or not</button>
+	  <button class="rainy-button rainy4">Come on</button>
+	  <button class="rainy-button rainy5">You can do it</button>
     </div>
 
     <div style="display:flex; justify-content:center;">
@@ -153,21 +157,48 @@ import { WeatherMaker } from "../components/weatherMaker";
   }
 
   .rainy-button {
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
+	background: linear-gradient(to bottom right, rgb(40, 223, 255), rgb(255, 91, 179));
     color: white;
     padding: 1rem;
     margin: 1rem;
     font-size: large;
-    border-color: white;
+	border-width: 0rem;
+    /* border: linear-gradient(to left, rgb(18, 126, 49), rgb(211, 42, 132)); */
     border-radius: 0.5rem;
 	cursor:pointer;
 	transition: 2s;
   }
-  .rainy-button:hover {
-	color: aqua;
-	border-color: aqua;
+  .rainy1:hover {
+	filter:contrast(500%)
+	/* color: aqua; */
+	/* border-color: aqua; */
 	/* background-color:dodgerblue; */
 	/* transition: 1s */
+  }
+  .rainy2 {
+	background: linear-gradient(to bottom right, rgb(0, 255, 72), rgb(210, 32, 255));
+  }
+  .rainy2:hover{
+	filter:hue-rotate(180deg)
+  }
+  .rainy3 {
+	background: linear-gradient(to bottom right, rgb(226, 255, 40), rgb(255, 91, 179));
+  }
+  .rainy3:hover{
+	filter:grayscale(75%)
+  }
+  .rainy4 {
+	background: linear-gradient(to bottom right, rgb(255, 149, 246), rgb(190, 0, 237));
+  }
+  .rainy4:hover{
+	filter:hue-rotate(180deg)
+  }
+  .rainy5 {
+	background: linear-gradient(to bottom right, rgb(255, 67, 67), rgb(255, 137, 200));
+  }
+  .rainy5:hover{
+	filter:invert(75%)
   }
 
   .bubbly {
