@@ -4,7 +4,8 @@ import Card from "../components/Card.astro";
 import { InlineNavigationTSX } from "../components/InlineNavigationTSX";
 import InlineNavigation from "../components/InlineNavigation.vue";
 import InlineNavMaster from "../components/InlineNavMaster.astro";
-
+import { Button } from "@mui/material";
+import { ButtonMUI } from "../components/ButtonMUI";
 ---
 
 <Layout title="Astro New Beginning">
@@ -25,6 +26,8 @@ import InlineNavMaster from "../components/InlineNavMaster.astro";
     <p style="text-align: center;">
       Let's make some <span class="make-content">content</span>.
     </p>
+
+	<ButtonMUI></ButtonMUI>
 
   </main>
 </Layout>
