@@ -4,6 +4,11 @@ import Layout, { navigationList } from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import InlineNavigation from '../components/inlineNavigation.vue';
 import InlineNavMaster from '../components/InlineNavMaster.astro';
+import { WeatherMaker } from '../components/weatherMaker';
+
+function letItRain(){
+	console.log(`It's raining`)
+}
 
 ---
 
@@ -23,6 +28,8 @@ import InlineNavMaster from '../components/InlineNavMaster.astro';
 		<p style="text-align: center;">No instructions yet...</p>
 
 		<p style="text-align: center;">Let's make some <span class="make-content">content</span>.</p>
+
+		<WeatherMaker />
 
 	</main>
 </Layout>
@@ -99,5 +106,14 @@ import InlineNavMaster from '../components/InlineNavMaster.astro';
 		color:hotpink;
 		color:pink;
 		transition-duration: 1000ms;
+	}
+	.rainy-button {
+		background-color: rgba(0,0,0,0);
+		color: aqua;
+		padding: 1rem;
+		margin: 1rem;
+		font-size: large;
+		border-color: white;
+		border-radius: 0.5rem;
 	}
 </style>
