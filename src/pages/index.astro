@@ -24,12 +24,14 @@ import { WeatherMaker } from "../components/weatherMaker";
       Let's make some <span class="make-content">content</span>.
     </p>
 
-    <button class="rainButton">Make it rain please</button>
+	<div style="display:flex; justify-content:center;">
+		<button class="rainy-button">Make it rain please</button>	
+	</div>
 
     <!-- <WeatherMaker /> -->
 
     <script>
-      const buttons = document.querySelectorAll("button.rainButton");
+      const buttons = document.querySelectorAll("button.rainy-button");
 
       buttons.forEach((button) => {
         button.addEventListener("click", () => {
