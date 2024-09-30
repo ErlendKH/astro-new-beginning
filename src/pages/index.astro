@@ -18,19 +18,32 @@ import { WeatherMaker } from "../components/weatherMaker";
       <InlineNavigation pages={navigationList} client:visible />
     </InlineNavMaster>
 
-    <p style="text-align: center;">No instructions yet...</p>
+    <!-- <p style="text-align: center;">No instructions yet...</p> -->
 
     <p style="text-align: center;">
       Let's make some <span class="make-content">content</span>.
     </p>
 
-	<div style="display:flex; justify-content:center;">
-		<button class="rainy-button">Make it rain please</button>	
+    <div style="display:flex; justify-content:center;">
+      <button class="rainy-button">Make it rain please</button>
+    </div>
+
+    <div style="display:flex; justify-content:center;">
+		<button class="button-all bubbly">Bubbly</button>
+		<button class="button-all bubbly">Bubbly</button>
+		<button class="button-all bubbly">Bubbly</button>
+	</div>
+
+    <div style="display:flex; justify-content:center;">
+		<button class="button-all shy">Shy</button>
 	</div>
 
     <!-- <WeatherMaker /> -->
 
     <script>
+      const main = document.querySelector("main");
+      console.log(main);
+
       const buttons = document.querySelectorAll("button.rainy-button");
 
       buttons.forEach((button) => {
@@ -39,7 +52,6 @@ import { WeatherMaker } from "../components/weatherMaker";
         });
       });
     </script>
-
   </main>
 </Layout>
 
@@ -119,13 +131,51 @@ import { WeatherMaker } from "../components/weatherMaker";
     color: pink;
     transition-duration: 1000ms;
   }
-  .rainy-button {
-    background-color: rgba(0, 0, 0, 0);
-    color: aqua;
+
+  .button-all {
+    background-color: rgb(0, 0, 0);
+    color: white;
     padding: 1rem;
     margin: 1rem;
     font-size: large;
     border-color: white;
     border-radius: 0.5rem;
+	cursor:pointer;
+	transition: 1s;
   }
+
+  .rainy-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: large;
+    border-color: white;
+    border-radius: 0.5rem;
+	cursor:pointer;
+	transition: 2s;
+  }
+  .rainy-button:hover {
+	color: aqua;
+	border-color: aqua;
+	/* background-color:dodgerblue; */
+	/* transition: 1s */
+  }
+
+  .bubbly {
+
+  }
+  .bubbly:hover {
+/* 	margin-left: 12rem;
+	transition: 1s */
+  }
+  .bubbly:active {
+	margin-right: 12rem;
+	/* transition: 1s */
+  }
+
+  .shy:hover {
+	opacity: 0
+  }
+
 </style>
